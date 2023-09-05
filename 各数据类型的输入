@@ -1,0 +1,28 @@
+#include<iostream>//数据的输入关键字cin 语法cin>>变量
+using namespace std;
+#include<string>//c++时字符串
+int main()
+{
+	int a = 0;
+	cout << "请给整型变量a赋值：" <<a<< endl;
+	cin >> a;
+	cout << "整型变量a=" << endl;
+	float f = 3.14f;
+	cout << "请给浮点型变量f赋值："<<f << endl;
+	cin >> f;
+	cout << "f="; << endl;
+	char ch = 'a';
+	cout << "请给字符变量ch赋值："<<ch << endl;
+	cin >> ch;
+	cout << "ch=";
+	string str = "hello";
+	cout << "请给字符串变量str赋值：" <<str<< endl;
+	cin >> str;
+	cout << "str=" << endl;
+	bool flag = false;
+	cout << "请给bool类型flag赋值：" << endl;
+	cin >> flag;
+	cout << "flag=" << flag << endl;
+		system("pause");
+	return 0;
+}
