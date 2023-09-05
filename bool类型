@@ -1,0 +1,15 @@
+#include<iostream>//bool类型代表真1或假0的值,1个字节的大小
+using namespace std;
+#include<string>//c++时字符串
+int main()
+{
+	//1.创建bool类型
+	bool flag = true;
+	cout << flag << endl;
+	flag = false;
+	cout << flag << endl;
+	//2.bool所占空间
+	cout << "bool类型所占的空间：" << sizeof(bool) << endl;
+	system("pause");
+	return 0;
+}
