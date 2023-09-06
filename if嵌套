@@ -1,0 +1,40 @@
+#include<iostream>//运算符
+using namespace std;
+#include<string>//c++时字符串
+int main()//选择结构 if语句 if（条件）（执行语句）
+{
+	int score = 0;
+	cout << "请输入一个分数：" << endl;
+	cin >> score;
+	cout << "您输入的分数为：" << score << endl;
+	if (score > 600)
+	{
+		cout << "恭喜一本大学" << endl;
+		if (score > 700)
+		{
+			cout << "beida" << endl;
+		}
+		else if (score > 650)
+		{
+			cout << "qinghua" << endl;
+		}
+		else 
+		{
+			cout << "renmindaxue" << endl;
+		}
+	}
+	else if(score>500)
+	{
+		cout << "未考上2本大学" << endl;
+	}
+	else if (score > 400)
+	{
+		cout << "考上3本大学" << endl;
+	}
+	else
+	{
+		cout << "再接再厉" << endl;
+	}
+		system("pause");
+	return 0;
+}
