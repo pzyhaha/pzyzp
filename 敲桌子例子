@@ -1,0 +1,22 @@
+#include<iostream>//敲桌子
+using namespace std;
+#include<string>//c++时字符串
+int main()
+{
+	//1.输入从一到100的数字，for循环实现
+	//2.不用全部输出，要选择，if
+	//3.选择条件
+	for (int i = 0; i < 100; i++)
+	{
+		if (i % 7 == 0 || i % 10 == 7 || i / 10 == 7)
+		{
+			cout << "敲桌子" << endl;
+		}
+		else
+		{
+			cout << i << endl;
+		}
+	}
+		system("pause");
+	return 0;
+}
