@@ -1,0 +1,58 @@
+//指针可以来保存一个地址
+//空指针：指针变量指向内存中编号为0的空间，此内存不可访问，能初始化指针变量。
+//野指针：指向非法的内存空间。要避免。
+#include<iostream>
+using namespace std;
+int main()
+{
+	//定义
+	int a = 10;
+	//int* p;
+	//p = &a;
+	int* p = &a;
+
+	cout << "sizeof(int*)=" << sizeof(int*) << endl;
+	cout << "sizeof(int*)=" << sizeof(float*) << endl;
+	cout << "sizeof(int*)=" << sizeof(double*) << endl;
+	cout << "sizeof(int*)=" << sizeof(char*) << endl;
+
+
+
+	cout << "地址为：" << &a << endl;
+	cout << "p为：" << p << endl;
+	//使用
+	*p = 1000;
+	cout << "a= " << a << endl;
+	cout << "p= " << *p<<endl;
+
+
+	int* d= NULL;
+	//*p = 100;空指针不可访问0-255之间的编号是系统占用的。
+
+	//指针所占的内存大小
+	
+
+	//野指针
+	int* c = (int*)0x1100;
+	//cout << *p << endl;
+
+	//const修饰指针，
+	// 1.常量指针：指针的指向可以改，但指向的值不能改。
+	// const int* p;
+	int e= 10;
+	int f = 10;
+	const int* p7 = &e;
+	p = &f;
+	//2.指针常量：指向不可改，值可改。
+	//int * const p=&a;
+	int* const p2 = &e;
+	*p2 = 100;
+
+	//3.const int * const p=&a;
+	//都不可以改。
+	const int* const p3 = &e;
+
+
+		system("pause");
+		return 0;
+}
