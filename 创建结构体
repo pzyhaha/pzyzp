@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+#include <string>
+struct student
+{//成员列表。
+	string name;
+	int age;
+	int score;
+} s3;//顺便创建结构体变量。不建议用
+//2.通过学生类型创建具体学生
+//2.1struct student s1;
+//2.2struct student s2={.....};
+//2.3struct student s3
+int main()
+{
+	/*struct student s1;
+	s1.name = "pzy";
+	s1.age = 19;
+	s1.score = 150;*/
+
+	/*struct student s2 = {"pzyz",19,180};*/
+	s3.name = "pzyzp";
+	s3.age = 19;
+	s3.score = 150;
+
+	cout << "姓名：" << s3.name << "年龄：" << s3.age << "分数：" << s3.score << endl;
+	system("pause");
+	return 0;
+}
